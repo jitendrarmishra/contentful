@@ -3,6 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Card, Col, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import client from '../contentfulClient';
+import moment from 'moment';
+
 const BlogList = () => {
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -45,12 +47,13 @@ const BlogList = () => {
 
       <Row>
         {data.map((post) => (
+             
           <Col md={4} key={post.sys.id} className="mb-4">
-            {console.log(post)}
+            {/* {console.log(post)} */}
             <Card>
               <Card.Body>
                 <Card.Title>{post.fields.title}</Card.Title>
-                <small className="text-muted">{post.fields.dateTime}</small>
+                <small className="text-muted">{moment(post.fields.dateTime).format('MMMM Do, YYYY') }</small>
                 <Card.Text>{post.fields.shortDescription}</Card.Text>
                 <Card.Footer>
                 
