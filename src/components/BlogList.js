@@ -45,16 +45,15 @@ const BlogList = () => {
 
       <Row>
         {data.map((post) => (
-            
           <Col md={4} key={post.sys.id} className="mb-4">
             {console.log(post)}
             <Card>
               <Card.Body>
                 <Card.Title>{post.fields.title}</Card.Title>
+                <small className="text-muted">{post.fields.dateTime}</small>
                 <Card.Text>{post.fields.shortDescription}</Card.Text>
                 <Card.Footer>
-                  <small className="text-muted">{post.fields.dateTime}</small>
-                  {/* <Link to={`/blogDetails`}>sdsadsa</Link> */}
+                
                   <Link to={`/blog/${post.sys.id}`}>Read More</Link>
                 </Card.Footer>
               </Card.Body>
