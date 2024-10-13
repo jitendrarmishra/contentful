@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Routes  } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import BlogList  from './components/BlogList';
 import BlogDetail from './components/BlogDetails';
-import client from './contentfulClient';
+// import client from './contentfulClient';
 
 
 const App = () => {
