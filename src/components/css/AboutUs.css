@@ -1,0 +1,43 @@
+/* AboutUs.css */
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    color: #2980b9;
+    margin-top: 30px;
+  }
+  
+  p {
+    margin: 10px 0;
+  }
+  
+  strong {
+    color: #e74c3c;
+  }
+  
+  /* Optional: Add a simple responsive design */
+  @media (max-width: 600px) {
+    .about-container {
+      padding: 15px;
+    }
+  
+    h1 {
+      font-size: 1.8em;
+    }
+  
+    h2 {
+      font-size: 1.5em;
+    }
+  }
